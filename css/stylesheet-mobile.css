@@ -1,0 +1,102 @@
+.wrapper {
+	width: 100%;
+	float: left;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+	width:100%;
+	position:fixed;
+	float:none;
+}
+
+header h1 {
+	position:fixed;
+	left:999px;
+}
+
+/************/
+/* SECTIONS */
+/************/
+
+.section-body {
+	width:100%;
+	float:none;
+}
+
+.professional img.vert, .prof-subpage img.vert {
+	display: none;
+}
+.professional img.vert-mobile, .prof-subpage img.vert-mobile {
+	display: inline;
+	margin-top:25px;
+	width:100%;
+	border: white solid 2px;
+}
+
+.personal img.vert {
+	display: none;
+}
+.personal img.vert-mobile {
+	display: inline;
+	margin-top:25px;
+	width:100%;
+	border: white solid 2px;
+}
+
+.pers-subpage img.vert {
+    width: 100%;
+}
+.pers-subpage img.horz-inline {
+	width:100%;
+	border: white solid 2px;
+}
+.pers-subpage img.horz {
+	width:100%;
+}
+
+
+/**************/
+/* NAVIGATION */
+/**************/
+
+ul.nav {
+	width:100%;
+	position:fixed;
+	float:none;
+	border:white solid 2px;
+}
+
+ul.nav li a br {
+	display: none; /* Collapse line breaks, which were necessary for circular button nav.*/
+}
+
+ul.nav li.home a:hover {
+	color: #197e7f;
+}
+
+ul.nav li.about-me a:hover {
+	color: #8ccc96;
+}
+
+ul.nav li.professional a:hover {
+	color: #f2693d;
+}
+
+ul.nav li.personal a:hover {
+	color: #754ca0;
+}
+
+
+/* SECTION */
+
+section {
+	border-top: white solid 200px; /* This is kind of hacky, but it works. */
+}
+
+.breaker {
+	height: 0px;
+}

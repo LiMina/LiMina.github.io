@@ -1,0 +1,271 @@
+html, body {
+	font-size: 15px;
+}
+
+h1 {
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+
+h3 {
+	padding-left: 5px;
+	font-size:30px;
+	letter-spacing: 2px;
+}
+
+h4 {
+	font-size:20px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+}
+
+p, table {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+p {
+	line-height:130%;
+	padding-bottom:10px;
+}
+
+p.image-holder {
+	text-align: center;
+}
+
+.table {
+	width: auto;
+	margin-left:25px;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.table-bordered {
+	border: white solid 1px;
+}
+
+a, a:focus {
+	color: white;
+}
+
+.wrapper {
+	width: 85%;
+	float: right;
+}
+
+.container-fluid {
+	padding-bottom:25px;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header h1 {
+	position:fixed;
+	left:999px;
+}
+
+/************/
+/* SECTIONS */
+/************/
+
+section {
+	min-height: 100vh;
+	display: block;
+	color: white;
+}
+
+section a {
+	text-decoration: underline;
+}
+
+/* Home */
+.home {
+	background-color: #197e7f;
+}
+.home a:hover {
+	color: #99c5c6;
+}
+
+.home img.horz {
+	margin-top:25px;
+	width:80%;
+	border: white solid 2px;
+}
+
+/* About Me */
+.about-me {
+	background-color: #7ac486;
+}
+.about-me a:hover {
+	color: #d1ead5;
+}
+
+.about-me img.horz {
+	margin-top:25px;
+	width:80%;
+	border: white solid 2px;
+}
+
+/* Professional */
+
+.professional {
+	background-color: #f37850;
+}
+.professional a:hover {
+	color: #f9c3b1; /*need to make this a lighter tint*/
+}
+.professional img.vert, .prof-subpage img.vert {
+	margin-top:75px;
+	float:right;
+	width:40%;
+	border: white solid 2px;
+}
+.professional img.vert-mobile, .prof-subpage img.vert-mobile {
+	display: none;
+}
+.prof-subpage {
+	background-color: #f9c3b1;
+}
+.prof-subpage a:hover {
+	color: #f37850;
+	cursor: pointer;
+}
+.prof-subpage img.horz {
+	margin-top:25px;
+	width:100%;
+	border: white solid 2px;
+}
+.prof-selected {
+	background-color:#f7a58a;
+}
+
+/** coursework **/
+
+.class-title, .class-listing, .class-description {
+	padding-left:25px;
+}
+.class-title {
+	font-weight:bold;
+}
+.class-listing {
+	margin-bottom:10px;
+}
+.class-description {
+	display:none;
+}
+
+/** resume **/
+.work-exp {
+	padding-left:25px;
+}
+.work-col {
+	height: auto;
+	padding:5px;
+	color:black;
+}
+.work-box {
+	height: auto;
+	padding:5px;
+	background-color: rgba(255,255,255,0.3);
+}
+.work-box .row {
+	padding:5px;
+	margin:0px;
+	background-color: rgba(255,255,255,0.3);
+}
+.work-box .work-company {
+	font-weight:bold;
+	font-variant: small-caps;
+    font-size:20px;
+    padding: 5px;
+    background-color: #f7a58a;
+    color: white;
+}
+.work-box .work-title {
+	font-variant: small-caps;
+	font-size:16px;
+}
+.work-box .work-date {
+	font-style: italic;
+}
+
+/* Personal */
+
+.personal {
+	background-color: #754ca0;
+}
+.personal a:hover {
+	color: #c3b2d6;
+}
+.personal img.vert {
+	margin-top:75px;
+	float:right;
+	width:40%;
+	border: white solid 2px;
+}
+.personal img.vert-mobile {
+	display: none;
+}
+.pers-subpage {
+	background-color: #c3b2d6;
+}
+.pers-subpage a:hover {
+	color: #754ca0;
+	cursor: pointer;
+}
+.pers-selected {
+	background-color: #9e81bc;
+}
+.pers-subpage img.vert {
+    width: 30%;
+    border: white solid 2px;
+}
+.pers-subpage img.horz-inline {
+	width:60%;
+	border: white solid 2px;
+}
+.pers-subpage img.horz {
+	width:100%;
+	border: white solid 2px;
+}
+
+/* Hiding pages */
+
+.no-show {
+	display: none;
+}
+
+/* Section breaker */
+
+.break {
+	height:50px;
+	display:block;
+}
+
+/* Instruction return */
+
+div.instructions-back {
+	position: fixed;
+	bottom:10px;
+	right:10px;
+}
+
+div.instructions-back a:hover {
+	cursor: pointer;
+}
+
+/**************/
+/* NAVIGATION */
+/**************/
+
+.nav a {
+	font-size: 16px;
+}
+
+.navbar-default {
+	background-color: white;
+}
