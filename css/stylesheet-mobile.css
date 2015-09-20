@@ -100,3 +100,37 @@ section {
 .breaker {
 	height: 0px;
 }
+
+.prof-subpage a.instructions-back {
+	background: #f9c3b1;
+	padding: 10px 15px;
+	position: fixed;
+	bottom:0px;
+	right:0px;
+	width:100%;
+	color: white;
+	border: solid white 2px;
+	text-decoration: none;
+}
+
+.prof-subpage a.instructions-back:hover {
+	background: white;
+	color: #f37850;
+}
+
+.pers-subpage a.instructions-back {
+	background: #c3b2d6;
+	padding: 10px 15px;
+	position: fixed;
+	bottom:0px;
+	right:0px;
+	width:100%;
+	color: white;
+	border: solid white 2px;
+	text-decoration: none;
+}
+
+.pers-subpage a.instructions-back:hover {
+	background: white;
+	color: #754ca0;
+}
