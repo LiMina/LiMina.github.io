@@ -279,3 +279,16 @@ a.instructions-back:hover {
 ul.nav {
 	z-index: 1;
 }
+
+.nav > li.show-toggle {
+	margin-top: 15px;
+	display: none;
+}
+
+.show-toggle {
+	background-color: #ae4254;
+}
+
+.show-toggle a:hover {
+	color: #ba5b6c;
+}

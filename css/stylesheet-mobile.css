@@ -78,27 +78,58 @@ ul.nav li a br {
 	display: none; /* Collapse line breaks, which were necessary for circular button nav.*/
 }
 
+/* Home */
+
+ul.nav li.home {
+	display: none;
+}
+
 ul.nav li.home a:hover {
 	color: #197e7f;
+}
+
+/* About Me */
+
+ul.nav li.about-me {
+	display: none;
 }
 
 ul.nav li.about-me a:hover {
 	color: #8ccc96;
 }
 
+/* Professional */
+
+ul.nav li.professional{
+	display: none;
+}
+
 ul.nav li.professional a:hover {
 	color: #f2693d;
+}
+
+/* Personal */
+
+ul.nav li.personal {
+	display: none;
 }
 
 ul.nav li.personal a:hover {
 	color: #754ca0;
 }
 
+/* Show Toggle */
+
+.nav > li.show-toggle {
+	display: block;
+	margin-top: 2px;
+}
+
 
 /* SECTION */
 
 section {
-	border-top: white solid 200px; /* This is kind of hacky, but it works. */
+	border-top: white solid 100px; /* This is kind of hacky, but it works. */
 }
 
 .breaker {
