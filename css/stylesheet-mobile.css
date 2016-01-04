@@ -3,6 +3,10 @@
 	float: left;
 }
 
+.container-fluid {
+	padding-bottom:50px;
+}
+
 /**********/
 /* HEADER */
 /**********/
