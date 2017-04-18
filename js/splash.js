@@ -8,10 +8,12 @@ $( document ).ready( function() {
 	}
 	if (selection == 1) {
 		$("img.splash").attr("src", "img/splash-1.jpg");
+		$("body").css("background-color", "#8BBBD1");
 		$("div#img-info").html("The image above was taken on the Golden Gate Bridge.");
 	} else {
 		$("img.splash").attr("src", "img/splash-2.jpg");
 		$("body").css("background-color", "#3C7AC7");
+		$("div#banner").css("text-align", "right");
 		$("header").css("text-align", "left");
 		$("header").css("color", "white");
 		$("header h1").css("left", "25px");
