@@ -1,0 +1,115 @@
+body {
+	font-size: 20px;
+}
+
+header {
+	text-align: right;
+}
+
+header h1 {
+	position: absolute;
+	right: 25px;
+}
+
+a {
+	color: #3d36b3;
+}
+
+a:hover {
+	color: #8e8add;
+}
+
+a:active {
+	color: #b4b1e8;
+}
+
+p {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+
+/**********/
+/* MAIN */
+/**********/
+
+img.splash {
+	top: 0px;
+	left: 0px;
+	height: auto;
+	width: 100%;
+	z-index: -10;
+}
+
+div.wrapper {
+	width: 100%;
+	margin: auto;
+	min-height: 100vh;
+}
+
+div.home {
+	background-color: #8BBBD1;
+}
+
+div#img-info {
+	padding-top: 100px;
+	text-align: right;
+	font-style: italic;
+}
+
+/** Introduction **/
+
+div#about {
+	padding-top: 10px;
+}
+
+div#intro-box {
+	width: 90%;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	height: 100%;
+}
+
+div#intro-box div#pages {
+	margin-top: 50px;
+	background-color: #adcfde;
+	text-align: center;
+}
+
+/** Sub Pages **/
+
+div.subpage {
+	background-color: #508338;
+	color: #c0c9bc;
+}
+
+div.subpage div.return-home a {
+	color: white;
+}
+
+div.subpage-box {
+	width: 90%;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+div.subpage-box div.extra-info {
+	margin-top: 10px;
+	background-color: #618f4b;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div#professional {
+	text-align: left;
+}
+
+h1#personal {
+	color: white;
+}
+
+div.subpage ul li {
+	padding-bottom: 10px;
+}
