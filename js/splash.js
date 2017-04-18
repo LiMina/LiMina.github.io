@@ -7,13 +7,14 @@ $( document ).ready( function() {
 		selection = 2;
 	}
 	if (selection == 1) {
+		$("img.splash").attr("src", "img/splash-1.jpg");
 		$("div#img-info").html("The image above was taken on the Golden Gate Bridge.");
 	} else {
+		$("img.splash").attr("src", "img/splash-2.jpg");
 		$("body").css("background-color", "#3C7AC7");
 		$("header").css("text-align", "left");
 		$("header").css("color", "white");
 		$("header h1").css("left", "25px");
-		$("img.splash").attr("src", "img/splash-2.jpg");
 		$("div.home").css("background-color", "#3C7AC7");
 		$("div#intro-box div#pages").css("background-color", "#6294d2");
 		$("div#img-info").html("The image above was taken at the Berkeley Aquatic Park.");

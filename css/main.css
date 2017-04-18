@@ -33,6 +33,11 @@ p {
 /* MAIN */
 /**********/
 
+div#banner {
+	min-height: 150px;
+	width: 100%;
+}
+
 img.splash {
 	top: 0px;
 	left: 0px;
@@ -112,4 +117,8 @@ h1#personal {
 
 div.subpage ul li {
 	padding-bottom: 10px;
+}
+
+div.subpage div.projects {
+	text-align: left;
 }
