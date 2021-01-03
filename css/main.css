@@ -146,7 +146,7 @@ div#work div.work-header {
 }
 
 div#work div.work-header:hover {
-	color: var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
 div#work div.work-wrapper {
@@ -216,7 +216,7 @@ div#life-grid div.right {
 }
 
 div#life-grid div.notes {
-	margin: auto;
+    margin: auto;
 }
 
 div#misc h2.project {
@@ -231,7 +231,7 @@ div#misc div.project-header {
 }
 
 div#misc div.project-header:hover {
-	color: var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
 div#misc h3.date {
@@ -258,16 +258,60 @@ div.description-open {
 /* NAV */
 /*******/
 
-div#nav {
-    position: fixed;
-    width: 100%;
-    bottom: -110px;
-    text-align: center;
-    background-color: rgba(4, 2, 3, 0.5);
-    padding-top: 10px;
+:root {
+    --root-two: 1.41421356237309504880168872420969rem;
+    /* x */
+    --bar-width: 30px;
+    /* a */
+    --bar-height: 4px;
+    /* b */
+    /* --bar-spacing: calc(
+        var(--bar-width) / (2 * var(--root-two)) - var(--bar-height)
+    ); */
+    /* --bar-spacing: calc((var(--bar-width) - 3 * var(--bar-height)) / 2); */
+    --bar-spacing: 9px;
 }
 
-div#nav .btn {
+div#nav {
+    position: fixed;
+    right: 3rem;
+    top: 3rem;
+    z-index: 10;
+}
+
+div#nav-button {
+    cursor: pointer;
+}
+
+div.nav-button-bar {
+    background-color: white;
+    height: var(--bar-height);
+    margin-bottom: var(--bar-spacing);
+    transition: all 2000ms ease-in-out;
+    /* transition: rotation 200ms ease-in-out 200ms; */
+    /* transition: width 200ms ease-in-out 200ms */
+    width: var(--bar-width);
+}
+
+/* @keyframes top {
+    0% {transform: rotate(-)}
+} */
+
+#nav-button-top {
+    transform: rotate(45deg) scale(1.35, 1);
+    transform-origin: left top;
+}
+
+#nav-button-middle {
+    background-color: #ffffff00;
+}
+
+#nav-button-bottom {
+    transform: rotate(-45deg) scale(1.35, 1);
+    transform-origin: left bottom;
+}
+
+/* div#nav .btn {
     background-color: white;
     border: none;
     color: #040203;
@@ -285,9 +329,9 @@ div#nav .btn {
 }
 
 div#nav .btn:hover {
-	background-color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
 }
 
 .active-section {
     background-color: var(--secondary-color) !important;
-}
+} */
