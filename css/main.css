@@ -54,7 +54,8 @@ div#banner #name {
     width: max-content;
     display: inline-block;
     letter-spacing: 15px;
-    padding-left: 15px;
+    padding-left: 35px;
+    padding-right: 20px;
 }
 
 div#banner #pronouns {
@@ -70,7 +71,9 @@ div#banner img {
 /********/
 
 div#home {
-    margin: 0 150px 0 150px;
+	padding: 0;
+    margin: auto;
+    max-width: 1500px;
 }
 
 div#home h1 {
@@ -98,8 +101,20 @@ div#home h4 {
 	font-size: 18px;
 }
 
+div#home ul {
+	list-style-type: disclosure-closed;
+	list-style-position: inside;
+	padding-left: 0px;
+}
+
+div#home ul li {
+	padding-bottom: 10px;
+}
+
 div#home div.nav-section {
 	margin-bottom: 200px;
+	margin-right: 150px;
+	margin-left: 150px;
 }
 
 div#work h2.company {
@@ -119,7 +134,8 @@ div#life-grid {
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 25px;
-	padding: 25px;
+	padding: 50px;
+	grid-auto-flow: column;
 }
 
 div#life img {
@@ -127,6 +143,13 @@ div#life img {
 	width: 550px;
 	height: 550px;
 	object-fit: cover;
+}
+
+div#life-grid div.left {
+   	grid-column: 1;
+}
+div#life-grid div.right {
+   	grid-column: 2;
 }
 
 div#misc h2.project {
@@ -165,7 +188,7 @@ div#nav .btn {
     height: 220px;
     width: 220px;
     font-size: 24px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     margin-right: 50px;
     margin-left: 50px;
     letter-spacing: inherit;
