@@ -3,7 +3,7 @@
 }
 
 body {
-    font-size: 18px;
+    font-size: 16px;
     background-color: #040203;
     font-family: Inconsolata, monospace;
     color: white;
@@ -70,7 +70,7 @@ div#banner img {
 /********/
 
 div#home {
-    margin: 0 100px 0 100px;
+    margin: 0 150px 0 150px;
 }
 
 div#home h1 {
