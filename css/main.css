@@ -1,5 +1,6 @@
 :root {
     --secondary-color: #fcad82;
+    --tertiary-color: #6e8cbe;
     --timeline-width: 0.3rem;
     --large-timeline-circle-width: 2.5rem;
     --small-timeline-circle-width: 2rem;
@@ -27,7 +28,7 @@ a {
 a:hover,
 a:active,
 a:visited {
-    color: #6e8cbe;
+    color: var(--tertiary-color);
 }
 
 /**********/
@@ -144,6 +145,10 @@ div#work div.work-header {
     -moz-user-select: none; /* Firefox */
 }
 
+div#work div.work-header:hover {
+	color: var(--tertiary-color);
+}
+
 div#work div.work-wrapper {
     border-left: var(--timeline-width) solid white;
     padding-bottom: 75px;
@@ -210,6 +215,10 @@ div#life-grid div.right {
     grid-column: 2;
 }
 
+div#life-grid div.notes {
+	margin: auto;
+}
+
 div#misc h2.project {
     text-align: right;
 }
@@ -219,6 +228,10 @@ div#misc div.project-header {
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
+}
+
+div#misc div.project-header:hover {
+	color: var(--tertiary-color);
 }
 
 div#misc h3.date {
@@ -269,6 +282,10 @@ div#nav .btn {
     margin-left: 50px;
     letter-spacing: inherit;
     cursor: pointer;
+}
+
+div#nav .btn:hover {
+	background-color: var(--tertiary-color);
 }
 
 .active-section {
