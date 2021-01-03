@@ -6,43 +6,39 @@ function navTo(destination) {
     elmnt.scrollIntoView({ behavior: "smooth" });
 }
 
-var observer = new IntersectionObserver(
-    function (entries) {
-        let largestRatio = 0;
-        let largestElement;
-        console.log(entries);
-        for (let i = 0; i < entries.length; i++) {
-            if (entries[i]["isIntersecting"] === true) {
-                if (entries[i]["intersectionRatio"] > largestRatio) {
-                    largestRatio = entries[i]["intersectionRatio"];
-                    largestElement = entries[i]["target"];
-                }
-            }
-        }
+var sections = ["banner", "contact", "work", "life", "misc"];
 
-        if (!largestElement) {
-            return;
-        }
+document.addEventListener("scroll", () => {
+    let closest = 30000;
+    let visibleElement;
+    for (let i = 0; i < sections.length; i++) {
+        let current = document.getElementById(sections[i]);
+        let top = current.getBoundingClientRect().top;
 
-        // remove active class from last section
+        if (Math.abs(top) < closest) {
+            closest = Math.abs(top);
+            visibleElement = current;
+        }
+    }
+
+    if (visibleElement.id === "banner") {
+        if (lastActiveSectionElement) {
+            lastActiveSectionElement.classList.remove("active-section");
+        }
+        return;
+    }
+
+    if (visibleElement) {
+        // console.log(visibleElement.id);
+
         if (lastActiveSectionElement) {
             lastActiveSectionElement.classList.remove("active-section");
         }
 
-        // add active class to current section in view
         var current = document.getElementById(
-            largestElement.id + "-nav-button"
+            visibleElement.id + "-nav-button"
         );
         current.classList.add("active-section");
         lastActiveSectionElement = current;
-    },
-    {
-        threshold: [0.1],
     }
-);
-
-// set targets for observer
-observer.observe(document.querySelector("#contact"));
-observer.observe(document.querySelector("#work"));
-observer.observe(document.querySelector("#life"));
-observer.observe(document.querySelector("#misc"));
+});
