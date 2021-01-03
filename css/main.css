@@ -21,17 +21,8 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
-    color: white;
-}
-
-a:active {
+a:hover, a:active, a:visited {
     color: #6e8cbe;
-}
-
-p {
-    padding-top: 5px;
-    padding-bottom: 15px;
 }
 
 /**********/
@@ -59,9 +50,6 @@ div#banner #name {
     font-size: 72px;
     line-height: 76px;
     text-transform: uppercase;
-}
-
-div#banner #name #name-text {
     border: 5px solid white;
     width: max-content;
     display: inline-block;
@@ -85,10 +73,73 @@ div#home {
     margin: 0 100px 0 100px;
 }
 
-div#home h2 {
+div#home h1 {
     letter-spacing: inherit;
-    font-size: 24px;
+    font-size: 36px;
     text-decoration: underline;
+    font-weight: normal;
+}
+
+div#home h2 {
+	letter-spacing: inherit;
+	font-weight: normal;
+	font-size: 24px;
+}
+
+div#home h3 {
+	letter-spacing: inherit;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+div#home h4 {
+	letter-spacing: inherit;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+div#home div.nav-section {
+	margin-bottom: 200px;
+}
+
+div#work h2.company {
+	display: inline;
+}
+
+div#work h2.company::after {
+	content: " :: ";
+}
+
+div#work h2.position {
+	display: inline;
+}
+
+div#life-grid {
+	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 25px;
+	padding: 25px;
+}
+
+div#life img {
+	border-radius: 50%;
+	width: 550px;
+	height: 550px;
+	object-fit: cover;
+}
+
+div#misc h2.project {
+	text-align: right;
+}
+
+div#misc h3.date {
+	text-align: right;
+	margin-bottom: 25px;
+}
+
+div.description {
+	margin-bottom: 75px;
 }
 
 /*******/
