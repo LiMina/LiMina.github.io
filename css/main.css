@@ -1,16 +1,22 @@
 body {
-	font-size: 20px;
+	font-size: 18px;
 	background-color: #040203;
 	font-family: Inconsolata, monospace;
+	color: white;
+  	letter-spacing: 0.1em;
 }
 
 a {
+	color: #FCAD82;
+	text-decoration: underline;
 }
 
 a:hover {
+	color: white;
 }
 
 a:active {
+	color: #6E8CBE;
 }
 
 p {
@@ -20,12 +26,11 @@ p {
 
 
 /**********/
-/* MAIN */
+/* BANNER */
 /**********/
 
 div#banner {
 	text-align: center;
-	color: white;
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -34,8 +39,8 @@ div#banner {
 
 div#banner #holder {
 	position: absolute;
-	top: 30%;
-	bottom: 70%;
+	top: 20%;
+	bottom: 80%;
 	right: 0;
 	left: 0;
 }
@@ -45,13 +50,14 @@ div#banner #name {
 	font-size: 72px;
 	line-height: 76px;
 	text-transform: uppercase;
-	letter-spacing: 15px;
 }
 
 div#banner #name #name-text {
 	border: 5px solid white;
 	width: max-content;
 	display: inline-block;
+	letter-spacing: 15px;
+	padding-left: 15px;
 }
 
 div#banner #pronouns {
@@ -60,4 +66,47 @@ div#banner #pronouns {
 
 div#banner img {
 	width: 100%;
+}
+
+/********/
+/* MAIN */
+/********/
+
+div#home {
+	margin: 0 100px 0 100px;
+}
+
+div#home h2 {
+	letter-spacing: inherit;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+/*******/
+/* NAV */
+/*******/
+
+div#nav {
+	position: fixed;
+	width: 100%;
+	bottom: -110px;
+	text-align: center;
+	background-color: rgba(4,2,3, 0.5);
+	padding-top: 10px;
+}
+
+div#nav .btn {
+  	background-color: white;
+  	border: none;
+  	color: #040203;
+  	padding: 20px;
+  	display: inline-block;
+  	border-radius: 50%;
+  	height: 220px;
+  	width: 220px;
+  	font-size: 24px;
+  	padding-bottom: 50px;
+  	margin-right: 50px;
+  	margin-left: 50px;
+  	letter-spacing: inherit;
 }
