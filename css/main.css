@@ -1,5 +1,8 @@
 :root {
     --secondary-color: #fcad82;
+    --timeline-width: 0.3rem;
+    --large-timeline-circle-width: 2.5rem;
+    --small-timeline-circle-width: 2rem;
 }
 
 body {
@@ -138,6 +141,49 @@ div#work div.work-header {
     -moz-user-select: none; /* Firefox */
 }
 
+div#work div.work-wrapper {
+    border-left: var(--timeline-width) solid white;
+    padding-bottom: 75px;
+    padding-left: 3rem;
+    position: relative;
+}
+
+div#work div.work-wrapper::before {
+    background-color: white;
+    border-radius: 100%;
+    content: "";
+    height: var(--small-timeline-circle-width);
+    left: calc(
+        -1 * var(--small-timeline-circle-width) / 2 - var(--timeline-width) / 2
+    );
+    position: absolute;
+    top: 0;
+    width: var(--small-timeline-circle-width);
+}
+
+/* starting dot */
+.work-wrapper:first-of-type::before {
+    height: var(--large-timeline-circle-width) !important;
+    left: calc(
+        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
+    ) !important;
+    width: var(--large-timeline-circle-width) !important;
+}
+
+/* ending dot */
+.work-wrapper:last-of-type::after {
+    background-color: white;
+    border-radius: 100%;
+    content: "";
+    height: var(--large-timeline-circle-width);
+    left: calc(
+        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
+    );
+    position: absolute;
+    bottom: 0;
+    width: var(--large-timeline-circle-width);
+}
+
 div#life-grid {
     margin: auto;
     display: grid;
@@ -178,7 +224,8 @@ div#misc h3.date {
 }
 
 div.description {
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
+    /* padding-bottom: 75px; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 400ms ease-in-out;
