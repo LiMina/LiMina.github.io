@@ -287,10 +287,11 @@ div.nav-button-bar {
     background-color: white;
     height: var(--bar-height);
     margin-bottom: var(--bar-spacing);
-    transition: all 2000ms ease-in-out;
+    transition: all 500ms ease-in-out;
     /* transition: rotation 200ms ease-in-out 200ms; */
     /* transition: width 200ms ease-in-out 200ms */
     width: var(--bar-width);
+    border-radius: 5px;
 }
 
 /* @keyframes top {
@@ -298,8 +299,8 @@ div.nav-button-bar {
 } */
 
 #nav-button-top {
-    transform: rotate(45deg) scale(1.35, 1);
-    transform-origin: left top;
+    transform: translate(0px, -1px) rotate(45deg) scaleX(1.3);
+    transform-origin: 0px 4px;
 }
 
 #nav-button-middle {
@@ -307,8 +308,8 @@ div.nav-button-bar {
 }
 
 #nav-button-bottom {
-    transform: rotate(-45deg) scale(1.35, 1);
-    transform-origin: left bottom;
+    transform: translate(0px, 2px) rotate(-45deg) scaleX(1.3);
+    transform-origin: 0px 0px;
 }
 
 /* div#nav .btn {
