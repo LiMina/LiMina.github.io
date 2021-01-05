@@ -266,16 +266,21 @@ div.description-open {
 }
 
 div#nav {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
     position: fixed;
     right: 3rem;
-    top: 3rem;
-    z-index: 10;
     text-align: right;
-    width: 30px;
+    top: 3rem;
+    width: 6rem;
+    z-index: 10;
 }
 
 div#nav-button {
     cursor: pointer;
+    width: 30px;
 }
 
 div.nav-button-bar {
@@ -302,7 +307,7 @@ div.nav-button-bar {
 }
 
 div#nav-sections {
-	max-height: 0;
+    max-height: 0;
     overflow: hidden;
     transition: max-height 400ms ease-in-out;
     -webkit-transition: max-height 400ms ease-in-out;
@@ -310,28 +315,46 @@ div#nav-sections {
 }
 
 div#nav-sections .btn {
-	color: white;
-	padding: 10px 0 10px 0;
-	display: inline;
-	font-size: 22px;
-	background-color: #00000000;
-	border: none;
-	position: relative;
-	float: right;
-	cursor: pointer;
+    background-color: #00000000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    font-size: 22px;
+    margin-top: 1rem;
+    position: relative;
+    padding: 10px 0 10px 0;
 }
 
 div#nav-sections .btn:hover {
-	color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 div#nav-section .active-section {
     text-decoration: underline;
 }
 
-div#nav-sections-open {
+div.nav-sections-open {
     /* may have to adjust if text is cut off... it's not exact */
-    max-height: 100px;
+    max-height: 300px !important;
+}
+
+div#nav-darken {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    transition: background-color 600ms ease-in-out;
+    -webkit-transition: background-color 600ms ease-in-out;
+    -moz-transition: background-color 600ms ease-in-out;
+    width: 100%;
+    z-index: 5;
+}
+
+div.nav-darken-open {
+    background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
 /* div#nav .btn {
