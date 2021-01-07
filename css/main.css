@@ -345,6 +345,7 @@ div#nav-darken {
     height: 100%;
     margin: 0;
     padding: 0;
+    pointer-events: none;
     position: fixed;
     transition: background-color 600ms ease-in-out;
     -webkit-transition: background-color 600ms ease-in-out;
