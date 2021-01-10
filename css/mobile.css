@@ -1,3 +1,10 @@
-div#life-grid {
-	display: inline-block;
+@media (max-width: 768px) {
+    body,
+    html {
+        /* color: pink; */
+    }
+
+    div#life-grid {
+        display: inline-block;
+    }
 }
