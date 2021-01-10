@@ -299,8 +299,6 @@ div#misc h3.date {
 }
 
 div.description {
-    /* margin-bottom: 75px; */
-    /* padding-bottom: 75px; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 400ms ease-in-out;
@@ -319,6 +317,11 @@ div.description-open {
     /* may have to adjust if text is cut off... it's not exact */
     max-height: 800px;
     overflow-y: auto;
+    padding-bottom: 1rem;
+}
+
+div.description p:first-of-type {
+	margin-top: 0;
 }
 
 /*******/
@@ -425,28 +428,3 @@ div#nav-darken {
 div.nav-darken-open {
     background-color: rgba(0, 0, 0, 0.75) !important;
 }
-
-/* div#nav .btn {
-    background-color: white;
-    border: none;
-    color: #040203;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 50%;
-    height: 220px;
-    width: 220px;
-    font-size: 24px;
-    padding-bottom: 60px;
-    margin-right: 50px;
-    margin-left: 50px;
-    letter-spacing: inherit;
-    cursor: pointer;
-}
-
-div#nav .btn:hover {
-    background-color: var(--tertiary-color);
-}
-
-.active-section {
-    background-color: var(--secondary-color) !important;
-} */
