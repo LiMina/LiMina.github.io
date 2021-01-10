@@ -198,7 +198,7 @@ div#work div.work-wrapper::before {
 div#life-grid {
     margin: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     grid-gap: 25px;
     padding: 50px;
     grid-auto-flow: column;
