@@ -243,6 +243,53 @@ div#misc div.project-header:hover {
     color: var(--tertiary-color);
 }
 
+div#misc div.project-header h2 {
+    margin-top: 0;
+}
+
+div#misc div.project-wrapper {
+    border-right: var(--timeline-width) solid white;
+    padding-bottom: 75px;
+    padding-right: 3rem;
+    position: relative;
+}
+
+div#misc div.project-wrapper::before {
+    background-color: white;
+    border-radius: 100%;
+    content: "";
+    height: var(--small-timeline-circle-width);
+    right: calc(
+        -1 * var(--small-timeline-circle-width) / 2 - var(--timeline-width) / 2
+    );
+    position: absolute;
+    top: 0;
+    width: var(--small-timeline-circle-width);
+}
+
+/* starting dot */
+.project-wrapper:first-of-type::before {
+    height: var(--large-timeline-circle-width) !important;
+    right: calc(
+        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
+    ) !important;
+    width: var(--large-timeline-circle-width) !important;
+}
+
+/* ending dot */
+.project-wrapper:last-of-type::after {
+    background-color: white;
+    border-radius: 100%;
+    content: "";
+    height: var(--large-timeline-circle-width);
+    right: calc(
+        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
+    );
+    position: absolute;
+    bottom: 0;
+    width: var(--large-timeline-circle-width);
+}
+
 div#misc h3.date {
     text-align: right;
     margin-bottom: 25px;

@@ -102,4 +102,10 @@
     div#life-grid div.right {
         grid-column: 1;
     }
+
+    /* misc */
+    div#misc div.project-wrapper {
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
 }
