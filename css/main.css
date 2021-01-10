@@ -250,6 +250,7 @@ div#misc div.project-header h2 {
 div#misc div.project-wrapper {
     border-right: var(--timeline-width) solid white;
     padding-bottom: 75px;
+    padding-left: 0 !important;
     padding-right: 3rem;
     position: relative;
 }
