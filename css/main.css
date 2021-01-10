@@ -83,7 +83,7 @@ div#banner img {
 div#home {
     padding: 0;
     margin: auto;
-    max-width: 1500px;
+    max-width: 60rem;
 }
 
 div#home h1 {
@@ -203,14 +203,14 @@ div#life-grid {
 }
 
 div#life-grid div.image {
-	position: relative;
-	width: 100%;
-	height: 0px;
-	padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 100%;
 }
 
 div#life-grid img {
-	position: absolute;
+    position: absolute;
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -256,11 +256,19 @@ div.description {
     transition: max-height 400ms ease-in-out;
     -webkit-transition: max-height 400ms ease-in-out;
     -moz-transition: max-height 400ms ease-in-out;
+
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+div.description::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 div.description-open {
     /* may have to adjust if text is cut off... it's not exact */
-    max-height: 500px;
+    max-height: 800px;
+    overflow-y: auto;
 }
 
 /*******/
