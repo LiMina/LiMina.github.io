@@ -1,3 +1,7 @@
+:root {
+    --nav-section-side-margin: 50px;
+}
+
 @media (max-width: 768px) {
     body,
     html {
@@ -5,6 +9,37 @@
     }
 
     div#life-grid {
-        display: inline-block;
-    }
+	    margin: auto;
+	    display: grid;
+	    grid-template-columns: auto;
+	    grid-gap: 25px;
+	    padding: 0px;
+	    grid-auto-flow: column;
+	}
+
+	div#life-grid div.image {
+		position: relative;
+		width: 100%;
+		height: 0px;
+		padding-bottom: 100%;
+	}
+
+	div#life-grid img {
+		position: absolute;
+	    border-radius: 50%;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	}
+
+	div#life-grid div {
+		margin: auto;
+	}
+
+	div#life-grid div.left {
+	    grid-column: 1;
+	}
+	div#life-grid div.right {
+	    grid-column: 1;
+	}
 }
