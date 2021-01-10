@@ -1,9 +1,10 @@
 @media (max-width: 768px) {
     :root {
-        --nav-section-side-margin: 50px;
-        --timeline-width: 0.2rem;
+    	--timeline-width: 0.2rem;
         --large-timeline-circle-width: 1.5rem;
         --small-timeline-circle-width: 1.2rem;
+    	--nav-section-bottom-margin: 100px;
+        --nav-section-side-margin: 50px;
     }
 
     body {
@@ -44,6 +45,7 @@
 
     div#home h1 {
         font-size: 1.5rem;
+        padding-bottom: 3rem;
     }
 
     div#home h2 {
@@ -72,16 +74,16 @@
         margin: auto;
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 25px;
+        grid-gap: 0;
         padding: 0px;
         grid-auto-flow: column;
     }
 
     div#life-grid div.image {
         position: relative;
-        width: 100%;
+        width: 80%;
         height: 0px;
-        padding-bottom: 100%;
+        padding-bottom: 80%;
     }
 
     div#life-grid img {
@@ -96,12 +98,14 @@
         margin: auto;
     }
 
-    div#life-grid div.left {
-        grid-column: 1;
-    }
     div#life-grid div.right {
         grid-column: 1;
     }
+
+    div#life-grid div.notes {
+	    margin-left: 1.8rem;
+	    margin-bottom: 3rem;
+	}
 
     /* misc */
     div#misc div.project-wrapper {

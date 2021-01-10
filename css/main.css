@@ -4,6 +4,7 @@
     --timeline-width: 0.3rem;
     --large-timeline-circle-width: 2.5rem;
     --small-timeline-circle-width: 2rem;
+    --nav-section-bottom-margin: 200px;
     --nav-section-side-margin: 150px;
 }
 
@@ -87,6 +88,7 @@ div#home {
 }
 
 div#home h1 {
+	padding-top: 50px;
     letter-spacing: inherit;
     font-size: 36px;
     text-decoration: underline;
@@ -122,7 +124,7 @@ div#home ul li {
 }
 
 div#home div.nav-section {
-    margin-bottom: 200px;
+    margin-bottom: var(--nav-section-bottom-margin);
     margin-right: var(--nav-section-side-margin);
     margin-left: var(--nav-section-side-margin);
 }
@@ -382,6 +384,7 @@ div#nav-sections {
 div#nav-sections .btn {
     background-color: #00000000;
     border: none;
+    outline: none;
     color: white;
     cursor: pointer;
     display: inline;
