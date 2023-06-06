@@ -1,10 +1,13 @@
 :root {
+	--primary-color: #040203;
     --secondary-color: #fcad82;
     --tertiary-color: #6e8cbe;
+    --quaternary-color: #d78d8f;
+    --off-white: #FAF9F6;
     --timeline-width: 0.3rem;
-    --large-timeline-circle-width: 2.5rem;
-    --small-timeline-circle-width: 2rem;
-    --nav-section-bottom-margin: 200px;
+    --large-timeline-circle-width: 1.75rem;
+    --small-timeline-circle-width: 1.5rem;
+    --nav-section-bottom-margin: 100px;
     --nav-section-side-margin: 150px;
 }
 
@@ -12,7 +15,7 @@ body {
     font-size: 16px;
     background-color: #040203;
     font-family: Inconsolata, monospace;
-    color: white;
+    color: var(--off-white);
     letter-spacing: 0.1em;
 }
 
@@ -20,6 +23,10 @@ body,
 html {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+	color: var(--secondary-color);
 }
 
 a {
@@ -46,6 +53,7 @@ div#banner {
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
+    color: white;
 }
 
 div#banner #holder {
@@ -61,7 +69,6 @@ div#banner #name {
     font-size: 72px;
     line-height: 76px;
     text-transform: uppercase;
-    border: 5px solid white;
     width: max-content;
     display: inline-block;
     letter-spacing: 15px;
@@ -89,10 +96,10 @@ div#home {
 
 div#home h1 {
 	padding-top: 50px;
+	padding-bottom: 10px;
     letter-spacing: inherit;
     font-size: 36px;
-    text-decoration: underline;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 div#home h2 {
@@ -120,13 +127,23 @@ div#home ul {
 }
 
 div#home ul li {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 div#home div.nav-section {
     margin-bottom: var(--nav-section-bottom-margin);
     margin-right: var(--nav-section-side-margin);
     margin-left: var(--nav-section-side-margin);
+}
+
+div#contact {
+	background-color: var(--off-white);
+	color: var(--primary-color);
+	padding: 50px;
+}
+
+div#contact h1 {
+	padding-top: 0px;
 }
 
 div#work h2.company {
@@ -153,14 +170,14 @@ div#work div.work-header:hover {
 }
 
 div#work div.work-wrapper {
-    border-left: var(--timeline-width) solid white;
+    border-left: var(--timeline-width) solid var(--off-white);
     padding-bottom: 75px;
     padding-left: 3rem;
     position: relative;
 }
 
 div#work div.work-wrapper::before {
-    background-color: white;
+    background-color: var(--tertiary-color);
     border-radius: 100%;
     content: "";
     height: var(--small-timeline-circle-width);
@@ -183,7 +200,7 @@ div#work div.work-wrapper::before {
 
 /* ending dot */
 .work-wrapper:last-of-type::after {
-    background-color: white;
+    background-color: var(--tertiary-color);
     border-radius: 100%;
     content: "";
     height: var(--large-timeline-circle-width);
@@ -201,6 +218,7 @@ div#life-grid {
     grid-template-columns: 50% 50%;
     grid-gap: 25px;
     padding: 50px;
+    padding-top: 0px;
     grid-auto-flow: column;
 }
 
@@ -231,7 +249,7 @@ div#life-grid div.notes {
 }
 
 div#misc h2.project {
-    text-align: right;
+    text-align: left;
 }
 
 div#misc div.project-header {
@@ -250,19 +268,19 @@ div#misc div.project-header h2 {
 }
 
 div#misc div.project-wrapper {
-    border-right: var(--timeline-width) solid white;
+    border-left: var(--timeline-width) solid var(--off-white);
     padding-bottom: 75px;
-    padding-left: 0 !important;
-    padding-right: 3rem;
+    padding-right: 0 !important;
+    padding-left: 3rem;
     position: relative;
 }
 
 div#misc div.project-wrapper::before {
-    background-color: white;
+    background-color: var(--tertiary-color);
     border-radius: 100%;
     content: "";
     height: var(--small-timeline-circle-width);
-    right: calc(
+    left: calc(
         -1 * var(--small-timeline-circle-width) / 2 - var(--timeline-width) / 2
     );
     position: absolute;
@@ -273,7 +291,7 @@ div#misc div.project-wrapper::before {
 /* starting dot */
 .project-wrapper:first-of-type::before {
     height: var(--large-timeline-circle-width) !important;
-    right: calc(
+    left: calc(
         -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
     ) !important;
     width: var(--large-timeline-circle-width) !important;
@@ -281,11 +299,11 @@ div#misc div.project-wrapper::before {
 
 /* ending dot */
 .project-wrapper:last-of-type::after {
-    background-color: white;
+    background-color: var(--tertiary-color);
     border-radius: 100%;
     content: "";
     height: var(--large-timeline-circle-width);
-    right: calc(
+    left: calc(
         -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
     );
     position: absolute;
@@ -294,7 +312,7 @@ div#misc div.project-wrapper::before {
 }
 
 div#misc h3.date {
-    text-align: right;
+    text-align: left;
     margin-bottom: 25px;
 }
 
@@ -315,7 +333,7 @@ div.description::-webkit-scrollbar {
 
 div.description-open {
     /* may have to adjust if text is cut off... it's not exact */
-    max-height: 800px;
+    max-height: 900px;
     overflow-y: auto;
     padding-bottom: 1rem;
 }
