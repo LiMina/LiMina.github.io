@@ -333,7 +333,7 @@ div.description::-webkit-scrollbar {
 
 div.description-open {
     /* may have to adjust if text is cut off... it's not exact */
-    max-height: 900px;
+    max-height: 1500px;
     overflow-y: auto;
     padding-bottom: 1rem;
 }
