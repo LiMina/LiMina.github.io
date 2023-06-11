@@ -17,9 +17,7 @@ var headerFunction = function () {
 
     for (let i = 0; i < descriptionElements.length; i++) {
         descriptionElements[i].classList.remove("description-open");
-        if (i < 6) {
-            chevronElements[i].classList.remove("chevron-flip");
-        }
+        chevronElements[i].classList.remove("chevron-flip");
     }
 
     if (!previouslyOpen) {

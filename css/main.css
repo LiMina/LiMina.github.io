@@ -1,6 +1,6 @@
 :root {
 	--primary-color: #040203;
-    --secondary-color: #fcad82;
+    --secondary-color: #fb9d69;
     --tertiary-color: #6e8cbe;
     --quaternary-color: #d78d8f;
     --off-white: #FAF9F6;
@@ -171,12 +171,11 @@ div#work div.work-header:hover {
 
 div#work div.work-header svg {
 	fill: var(--off-white);
-	width: 15%;
 	cursor: pointer;
 	position: absolute;
 	top: -12px;
 	right: 0;
-	transition: all 0.5s ease-out;
+	transition: all 400ms ease-out;
 }
 
 div#work div.work-header:hover svg {
@@ -198,40 +197,8 @@ div#work div.work-wrapper {
     position: relative;
 }
 
-div#work div.work-wrapper::before {
-    background-color: var(--tertiary-color);
-    border-radius: 100%;
-    content: "";
-    height: var(--small-timeline-circle-width);
-    left: calc(
-        -1 * var(--small-timeline-circle-width) / 2 - var(--timeline-width) / 2
-    );
-    position: absolute;
-    top: 0;
-    width: var(--small-timeline-circle-width);
-}
-
-/* starting dot */
-.work-wrapper:first-of-type::before {
-    height: var(--large-timeline-circle-width) !important;
-    left: calc(
-        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
-    ) !important;
-    width: var(--large-timeline-circle-width) !important;
-}
-
-/* ending dot */
-.work-wrapper:last-of-type::after {
-    background-color: var(--tertiary-color);
-    border-radius: 100%;
-    content: "";
-    height: var(--large-timeline-circle-width);
-    left: calc(
-        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
-    );
-    position: absolute;
-    bottom: 0;
-    width: var(--large-timeline-circle-width);
+div#work div.work-wrapper:last-of-type {
+    padding-bottom: 0px;
 }
 
 div#life-grid {
@@ -297,40 +264,29 @@ div#misc div.project-wrapper {
     position: relative;
 }
 
-div#misc div.project-wrapper::before {
-    background-color: var(--tertiary-color);
-    border-radius: 100%;
-    content: "";
-    height: var(--small-timeline-circle-width);
-    left: calc(
-        -1 * var(--small-timeline-circle-width) / 2 - var(--timeline-width) / 2
-    );
-    position: absolute;
-    top: 0;
-    width: var(--small-timeline-circle-width);
+div#misc div.project-wrapper:last-of-type {
+    padding-bottom: 0px;
 }
 
-/* starting dot */
-.project-wrapper:first-of-type::before {
-    height: var(--large-timeline-circle-width) !important;
-    left: calc(
-        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
-    ) !important;
-    width: var(--large-timeline-circle-width) !important;
+div#misc div.project-wrapper svg {
+	fill: var(--off-white);
+	cursor: pointer;
+	position: absolute;
+	top: -12px;
+	right: 0;
+	transition: all 400ms ease-out;
 }
 
-/* ending dot */
-.project-wrapper:last-of-type::after {
-    background-color: var(--tertiary-color);
-    border-radius: 100%;
-    content: "";
-    height: var(--large-timeline-circle-width);
-    left: calc(
-        -1 * var(--large-timeline-circle-width) / 2 - var(--timeline-width) / 2
-    );
-    position: absolute;
-    bottom: 0;
-    width: var(--large-timeline-circle-width);
+div#misc div.project-wrapper:hover svg {
+	fill: var(--tertiary-color);
+}
+
+div#misc div.project-wrapper svg.chevron-flip {
+	transform: rotate(180deg);
+}
+
+div#misc div.header-box {
+	width: 85%;
 }
 
 div#misc h3.date {
