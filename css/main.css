@@ -169,6 +169,28 @@ div#work div.work-header:hover {
     color: var(--tertiary-color);
 }
 
+div#work div.work-header svg {
+	fill: var(--off-white);
+	width: 15%;
+	cursor: pointer;
+	position: absolute;
+	top: -12px;
+	right: 0;
+	transition: all 0.5s ease-out;
+}
+
+div#work div.work-header:hover svg {
+	fill: var(--tertiary-color);
+}
+
+div#work div.work-header svg.chevron-flip {
+	transform: rotate(180deg);
+}
+
+div#work div.header-box {
+	width: 85%;
+}
+
 div#work div.work-wrapper {
     border-left: var(--timeline-width) solid var(--off-white);
     padding-bottom: 75px;
